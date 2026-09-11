@@ -1,0 +1,109 @@
+{
+  "step": {
+    "prediction": "환경 A에서 평균 빈도가 늘어날 것으로 예측합니다.",
+    "generation": "세대 1/20적용 환경 A적용 seed 7",
+    "focus": "run-one"
+  },
+  "pending": {
+    "disabled": [
+      [
+        "run-one",
+        true
+      ],
+      [
+        "run-20",
+        true
+      ],
+      [
+        "repeat",
+        true
+      ],
+      [
+        "neutral",
+        true
+      ],
+      [
+        "transition",
+        true
+      ],
+      [
+        "size-recomb",
+        true
+      ]
+    ],
+    "pulse": [
+      "reset"
+    ],
+    "active": "현재 적용 조건초기 p(A)=p(B)=0.5 · 이배체 N=60 · 현재 세대 1 · r=0.00"
+  },
+  "saved": {
+    "record": "반복 기록 · N=60, seed=7, r=0, 선택, 환경 A, 세대 1, 반복 10회",
+    "snapshot": "실행 데이터 보기p(A), p(B)42.5%, 42.5%N · seed · r60 · 7 · 0선택 · 환경 · 세대 · 반복선택 · A · 1 · 10회저장된 반복 비교 결과seed+i 10회 반복seed 범위 7~16 · N=60 · r=0 · env=A · 세대 0~20 · y축 0~1p(A) 반복 분포seed별 선 · 평균 점선 · 중앙값 실선 · p10~p901.00.500세대20세대seed 반복 1seed 반복 2seed 반복 3seed 반복 4seed 반복 5seed 반복 6seed 반복 7seed 반복 8seed 반복 9seed 반복 10평균중앙값평균 점선 · 중앙값 실선 · seed dashp(A) 평균 분포세대평균중앙값p10p90050.0%50.0%50.0%50.0%147.5%47.1%42.4%54.5%252.1%52.5%44.6%59.4%357.8%56.7%51.8%68.2%461.3%62.1%55.8%66.2%565.6%65.8%61.6%70.1%668.1%71",
+    "charts": 2,
+    "prediction": "환경 A에서 평균 빈도가 늘어날 것으로 예측합니다."
+  },
+  "empty": {
+    "error": "조건 초안이 있습니다. 실험 초기화로 적용하세요.",
+    "active": "세대 0/20적용 환경 A적용 seed 0"
+  },
+  "transition": {
+    "generation": "세대 20/20적용 환경 A→B적용 seed 7",
+    "env": "A → B · 현재 B",
+    "invalid": false
+  },
+  "responsive": [
+    {
+      "inner": 320,
+      "client": 320,
+      "scroll": 320
+    },
+    {
+      "inner": 360,
+      "client": 360,
+      "scroll": 360
+    },
+    {
+      "inner": 1280,
+      "client": 1265,
+      "scroll": 1265
+    }
+  ],
+  "media": {
+    "reduced": true,
+    "dark": true,
+    "duration": "1e-05s",
+    "background": "oklch(0.975 0.018 95)"
+  },
+  "emptyRetest": {
+    "error": "시드를 입력해 주세요",
+    "active": "세대 0/20적용 환경 A적용 seed 7"
+  },
+  "emptyPreviousFixed": true,
+  "webgl": {
+    "startupThree": true,
+    "contextLossFallback": true,
+    "forced2dTwentyGenerationsAndRepeats": true
+  },
+  "keyboard": {
+    "focusAfterRun": true,
+    "modalShiftTabTrap": true,
+    "escapeReturnsToOpener": true
+  },
+  "rendererFix": {
+    "removed": ["CircleGeometry dry overlay", "CircleGeometry wet overlay"],
+    "localPreviewScreenshot": "output/qa/ellipse-fixed.png",
+    "publicScreenshot": "output/qa/public-final.png",
+    "sceneImageVisible": true
+  },
+  "publicDeployment": {
+    "url": "https://app-green-two-32.vercel.app/",
+    "ready": true,
+    "assetStatus": 200,
+    "threeMode": true,
+    "oneGeneration": true,
+    "twentyGenerations": true,
+    "repeat10": true,
+    "finiteValues": true,
+    "browserErrors": []
+  }
+}

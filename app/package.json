@@ -1,0 +1,8 @@
+{
+  "name": "evolving-island-inquiry",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:engine": "node tests/engine-tests.mjs"
+  }
+}

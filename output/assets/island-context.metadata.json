@@ -1,0 +1,17 @@
+{
+  "asset": "island-context.png",
+  "tool": "built-in image_gen",
+  "model": "미확인",
+  "generated_at": "2026-09-11",
+  "prompt": "밝은 과학 교재용 가상 섬 항공 장면, 왼쪽 건조 바위 해안 오른쪽 습윤 숲 패치, 부드러운 고급 3D 교재 일러스트, 아이보리와 바다 청록 숲 녹색, 문자 숫자 그래프 유전 기호 없이, 가로 풍경, UI 아닌 풍경만. 실측/과학 근거 아닌 가상 맥락.",
+  "alt": "밝은 하늘 아래 왼쪽의 건조한 바위 해안과 오른쪽의 울창한 습윤 숲이 함께 보이는 가상의 섬 항공 풍경",
+  "caption": "가상의 섬: 건조한 바위 해안과 습윤 숲 패치가 만나는 항공 풍경",
+  "review": {
+    "dimensions": "1536x1024",
+    "orientation": "landscape",
+    "fictional_context_only": true,
+    "no_text_numbers_graphs_or_genetic_symbols": true,
+    "no_ui_elements": true,
+    "visual_check": "통과"
+  }
+}

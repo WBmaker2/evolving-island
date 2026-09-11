@@ -21,6 +21,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
       - name: Upload static app
         uses: actions/upload-pages-artifact@v3
         with:

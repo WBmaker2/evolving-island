@@ -96,6 +96,20 @@
     "sceneImageVisible": true
   },
   "publicDeployment": {
+    "url": "https://wbmaker2.github.io/evolving-island/",
+    "status": "verified",
+    "ready": true,
+    "assetStatus": 200,
+    "desktopScreenshot": "output/qa/github-pages-desktop.png",
+    "mobileScreenshot": "output/qa/github-pages-mobile.png",
+    "threeMode": true,
+    "oneGeneration": true,
+    "twentyGenerations": true,
+    "repeat10": true,
+    "finiteValues": true,
+    "browserErrors": []
+  },
+  "previousDeployment": {
     "url": "https://app-green-two-32.vercel.app/",
     "ready": true,
     "assetStatus": 200,

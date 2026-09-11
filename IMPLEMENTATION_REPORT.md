@@ -11,7 +11,7 @@
 - [Pages 배포 workflow](https://github.com/WBmaker2/evolving-island/actions/workflows/pages.yml)
 - 이전 공개 확인본: [Vercel production](https://app-green-two-32.vercel.app/)
 
-앞의 두 링크는 현재 컴퓨터의 Open Design 실행에 연결된 로컬 주소라 Open Design 재시작 후 포트가 달라질 수 있다. 공개 확인에는 Vercel production 주소를 사용한다.
+앞의 두 링크는 현재 컴퓨터의 Open Design 실행에 연결된 로컬 주소라 Open Design 재시작 후 포트가 달라질 수 있다. 공개 확인에는 GitHub Pages 주소를 사용한다.
 
 ## 구현 범위
 
@@ -56,7 +56,7 @@ ego-browser에서 수행했다. 생성 작업의 내부 샌드박스 연결 실�
 - `?force2d=1` 시작에서도 20세대와 10회 반복 완료.
 - 공개 배포본에서 이미지 자산 200 응답, Three.js 시작, 타원 레이어 소스 부재, 한 세대·20세대·seed+i 10회 반복, NaN/Infinity 부재와 브라우저 오류 0건을 확인했다.
 
-[브라우저 측정 기록](output/qa/browser-validation.json)에는 빈 시드 오류 발견 당시 값과 수정 후 재검증 값을 함께 남겼다. [데스크톱 화면](output/qa/desktop.png), [모바일 화면](output/qa/mobile.png)도 저장했다.
+[브라우저 측정 기록](output/qa/browser-validation.json)에는 빈 시드 오류 발견 당시 값과 수정 후 재검증 값을 함께 남겼다. GitHub Pages 공개 검증 캡처는 [데스크톱 화면](output/qa/github-pages-desktop.png)과 [모바일 화면](output/qa/github-pages-mobile.png)으로 저장했다. 이전 Vercel 검증 결과는 QA JSON의 `previousDeployment`에 보존했다.
 
 ## 자산 및 파일
 

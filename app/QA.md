@@ -13,3 +13,4 @@
 - 후속 bounded 보완: 기록 상세에 실제 pA/pB·N·seed·r·선택·환경·세대·반복수와 스냅샷 상태를 표시하고 설명 편집 저장을 연결했습니다. 섬 생성 직후 population 렌더 호출, top/oblique 시점 버튼, data-action/data-individual-index/data-od-id 초점 복구, 모달 양방향 Tab trap과 Esc 닫기, 빈 seed의 자동 0 변환 방지를 추가했습니다. charts.js는 수정하지 않았습니다.
 - 최종 bounded 보완: draft 조건 변경 시 반복·선택/중립·환경 전환·크기/재조합 비교 버튼을 모두 비활성화하고 공통 실행 가드를 추가했습니다. 기록 details 안에 snapshot type별 저장 차트(반복·선택/중립·크기/재조합·환경 전환)를 직접 렌더하도록 연결했습니다.
 - 화면 수정 검증: 배경 이미지를 가리던 `CircleGeometry` 타원 레이어 두 개를 제거하고, 로컬 Preview와 공개 배포본에서 섬 풍경 전체·개체 표식·20세대·seed+i 10회 반복을 확인했습니다.
+- 2026-09-15 · 배포 전 자산·완주 보완: 기준 장면 1장과 신규 이미지 8장을 `assets/`에 연결하고, 320/375/768/1280px 네 폭에서 갤러리 9장 자연 너비 로딩, 한 세대→20세대→seed+i 10회→관찰·예측·설명 저장 흐름, `scrollWidth === clientWidth`, 브라우저 런타임 오류 0건을 확인했습니다. 실행 방법과 실제 측정값은 [`../output/qa/four-width-device-flow.json`](../output/qa/four-width-device-flow.json)에 기록했습니다. 이 기록은 ego-browser의 폭 에뮬레이션이며 물리 단말 센서 검증을 뜻하지 않습니다.

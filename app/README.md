@@ -7,6 +7,7 @@
 - OpenDesign Studio/Preview 원본 링크: [Studio](http://127.0.0.1:64527/projects/project-50b0/conversations/e0cc4735-f741-48b8-8c22-6abc8390772c/files/index.html), [Preview](http://127.0.0.1:64519/api/projects/project-50b0/raw/index.html)
 - 공개 배포본: [GitHub Pages](https://wbmaker2.github.io/evolving-island/)
 - 이전 공개 확인본: [Vercel production](https://app-green-two-32.vercel.app/)
+- 현재 자산 기록: [`../output/assets/island-assets.metadata.json`](../output/assets/island-assets.metadata.json), [`../output/assets/island-prompts.md`](../output/assets/island-prompts.md)
 
 ## 검증
 
@@ -27,3 +28,5 @@ python3 -m http.server 4173
 정적 export는 GitHub Pages에 배포되어 공개 주소에서 확인할 수 있습니다. GitHub Actions workflow는 저장소의 `main` push마다 이 `app/` 디렉터리를 Pages artifact로 배포합니다.
 
 OpenDesign 전용 숨김 메타데이터, artifact sidecar, `node_modules`는 export에서 제외했습니다. 원본과 export의 복제 파일은 export 후 SHA-256 해시로 일치 여부를 확인합니다.
+
+앱에는 기준 섬 장면 1장과 표현형·서식지·계절 맥락 이미지 8장을 연결했습니다. 이미지는 가상의 장면 참고이며 유전 빈도·적합도·측정값의 근거가 아닙니다. 이미지 호출 인자에 Image 2.5 선택기가 노출되지 않아 모델명은 확인하지 않았습니다.

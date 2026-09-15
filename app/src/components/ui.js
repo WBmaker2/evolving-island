@@ -20,6 +20,10 @@ export function genotypeRows(summary) {
   return entries.map(([key, count]) => `<tr><th scope="row"><code>${key}</code></th><td>${count}마리</td><td>${percent(summary.genotypeFrequency[key])}</td></tr>`).join('') || '<tr><td colspan="3">아직 자녀 세대가 없습니다.</td></tr>';
 }
 
-export function individualCards(population, selectedIndex = null) {
-  return population.slice(0, 6).map((individual, index) => `<button class="individual-card ${selectedIndex === index ? 'selected' : ''}" data-individual-index="${index}" data-od-id="individual-${index + 1}" aria-pressed="${selectedIndex === index}" aria-label="${index + 1}번 개체 ${individual.haplotypes.join('와')} 관찰"><span class="individual-index">${String(index + 1).padStart(2, '0')}</span><strong>${individual.haplotypes[0]}</strong><span class="chromosome-slash">/</span><strong>${individual.haplotypes[1]}</strong><small>${individual.phenotype}</small></button>`).join('');
+export function individualCards(population, selectedIndex = null, organismAssetByPhenotype = {}) {
+  return population.slice(0, 6).map((individual, index) => {
+    const asset = organismAssetByPhenotype[individual.phenotype];
+    const image = asset ? `<img class="individual-art" src="${escapeHtml(asset)}" alt="가상 개체 표현형 참고 이미지 · 실제 생물이나 유전 결과를 뜻하지 않음" loading="lazy" decoding="async">` : '';
+    return `<button class="individual-card ${selectedIndex === index ? 'selected' : ''}" data-individual-index="${index}" data-od-id="individual-${index + 1}" aria-pressed="${selectedIndex === index}" aria-label="${index + 1}번 개체 ${individual.haplotypes.join('와')} 관찰">${image}<span class="individual-index">${String(index + 1).padStart(2, '0')}</span><strong>${individual.haplotypes[0]}</strong><span class="chromosome-slash">/</span><strong>${individual.haplotypes[1]}</strong><small>${individual.phenotype}</small></button>`;
+  }).join('');
 }
